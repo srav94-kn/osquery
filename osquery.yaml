@@ -16,8 +16,8 @@
        dest: "{{ item.dst }}"
 
      with_items:
-       - { src: fim.conf, dst: /usr/share/osquery/packs/fim.conf }
-       - { src: osquery.conf, dst: /etc/osquery/osquery.conf }
+       - { src: /home/ubuntu/fim.conf, dst: /usr/share/osquery/packs/fim.conf }
+       - { src: /home/ubuntu/osquery.conf, dst: /etc/osquery/osquery.conf }
 
    - name: starting and enabling osquery service
      service:
