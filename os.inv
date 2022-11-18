@@ -1,1 +1,1 @@
-dev ansible_host=54.221.30.71 ansible_connection=ssh
+dev ansible_host=54.225.32.66 ansible_connection=ssh
