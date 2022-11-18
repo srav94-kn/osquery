@@ -5,12 +5,12 @@
 
 
  tasks:
-    - name: installing osquery
+ - name: installing osquery
       apt:
         deb: https://pkg.osquery.io/deb/osquery_5.4.0_1.linux.amd64.deb
         update_cache: yes
     
-    - name: adding osquery configuration
+ - name: adding osquery configuration
       template:
         src: "{{ item.src }}"
         dest: "{{ item.dst }}"
@@ -19,7 +19,7 @@
         - { src: fim.conf, dst: /usr/share/osquery/packs/fim.conf }
         - { src: osquery.conf, dst: /etc/osquery/osquery.conf }
     
-    - name: starting and enabling osquery service
+ - name: starting and enabling osquery service
       service:
         name: osqueryd
         state: started
