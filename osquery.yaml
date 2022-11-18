@@ -15,7 +15,7 @@
           src: "{{ item.src }}"
           dest: "{{ item.dst }}"
 
-        with_items:
+      with_items:
           - { src: fim.conf, dst: /usr/share/osquery/packs/fim.conf }
           - { src: osquery.conf, dst: /etc/osquery/osquery.conf }
 
