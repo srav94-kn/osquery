@@ -18,8 +18,8 @@
        become: true
 
      with_items:
-       - { src: /home/ubuntu/fim.conf, dst: /usr/share/osquery/packs/fim.conf }
-       - { src: /home/ubuntu/osquery.conf, dst: /etc/osquery/osquery.conf }
+       - { src: fim.conf, dst: /usr/share/osquery/packs/fim.conf }
+       - { src: osquery.conf, dst: /etc/osquery/osquery.conf }
 
    - name: starting and enabling osquery service
      service:
