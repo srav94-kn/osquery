@@ -15,6 +15,7 @@
        src: "{{ item.src }}"
        dest: "{{ item.dst }}"
        remote_src: yes
+       become: true
 
      with_items:
        - { src: /home/ubuntu/fim.conf, dst: /usr/share/osquery/packs/fim.conf }
