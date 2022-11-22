@@ -1,1 +1,1 @@
-dev ansible_host=54.90.244.117 ansible_connection=ssh
+localhost  ansible_connection=localhost
