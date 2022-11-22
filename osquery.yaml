@@ -1,5 +1,5 @@
 - name: setting up osquery
-  hosts: dev
+  hosts: localhost
   become: yes
 
 
