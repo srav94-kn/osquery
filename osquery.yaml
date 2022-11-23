@@ -1,5 +1,5 @@
 - name: setting up osquery
-  hosts: localhost
+  hosts: dev
   become: yes
 
 
@@ -7,7 +7,7 @@
   tasks:
    - name: installing osquery
      apt:
-       deb: https://pkg.osquery.io/deb/osquery_2.10.2_1.linux.amd64.deb
+       deb: https://pkg.osquery.io/deb/osquery_5.4.0-1.linux_amd64.deb
        update_cache: yes
    - name: starting and enabling osquery service
      service:
